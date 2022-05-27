@@ -475,6 +475,21 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   color: #b0914f;
 }
 
+
+/* custom sytle */
+.icon-services{
+  height: 40px;
+}
+
+.margin-top-bottom{
+  margin:25px 0 0 0 ;
+}
+
+.darkenImg {
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* msie */
+}
+
 @media (max-width: 400px) {
   .navbar-toggler {
     border: 1px solid #000;
@@ -516,12 +531,14 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   .sticky {
     position: static;
   }
+  
 }
 
 @media (max-width: 992px) {
   .sticky {
     position: static;
   }
+  
 }
 
 .slider {
@@ -848,7 +865,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   }
   .testimonial:after {
     width: 100%;
+    
   }
+  
 }
 
 /*================= 12. BOOKING STEP ==================*/
@@ -952,6 +971,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   .ed-booking-tab .nav-tabs li a span.ed-step-bar, .ed-booking-tab .nav-tabs li .page-breadcumb i span.ed-step-bar, .page-breadcumb .ed-booking-tab .nav-tabs li i span.ed-step-bar {
     width: 132%;
   }
+  
 }
 
 .ed-booking-tab .nav-tabs li a span.ed-step-text, .ed-booking-tab .nav-tabs li .page-breadcumb i span.ed-step-text, .page-breadcumb .ed-booking-tab .nav-tabs li i span.ed-step-text {
@@ -1188,6 +1208,7 @@ ul.ed-reservation-detail li:first-child span:last-child {
   .tab-content .comment-form .confirm-btn {
     margin-right: 30px;
   }
+  
 }
 
 span.policy {
