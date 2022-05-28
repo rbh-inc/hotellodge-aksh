@@ -5,6 +5,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -488,6 +489,13 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 .darkenImg {
   opacity: 0.4;
   filter: alpha(opacity=40); /* msie */
+}
+
+.rooms-section{
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  
 }
 
 @media (max-width: 400px) {
