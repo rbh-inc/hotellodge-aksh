@@ -498,9 +498,8 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   
 }
 
-.aboutus-tech-list{
-  list-style: none;
-  color: #7B7B7B;
+.about-icons{
+  height: 70px;
 }
 
 @media (max-width: 400px) {
