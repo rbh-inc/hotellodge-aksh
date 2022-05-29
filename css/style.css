@@ -501,6 +501,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 .about-icons{
   height: 70px;
 }
+.icons-services{
+  height: 60px;
+}
 
 @media (max-width: 400px) {
   .navbar-toggler {
