@@ -498,6 +498,11 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   
 }
 
+.aboutus-tech-list{
+  list-style: none;
+  color: #7B7B7B;
+}
+
 @media (max-width: 400px) {
   .navbar-toggler {
     border: 1px solid #000;
