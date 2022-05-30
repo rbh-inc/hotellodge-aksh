@@ -8,6 +8,10 @@ body {
 
 }
 
+a:visited{
+  color:none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", sans-serif;
 }
@@ -503,6 +507,12 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 .icons-services{
   height: 60px;
+}
+.room-offering-pricing{
+  font-size: 12px;
+}
+.room-offering-pricing span{
+  color: #B0914F;
 }
 
 @media (max-width: 400px) {
