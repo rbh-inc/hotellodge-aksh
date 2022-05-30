@@ -515,6 +515,11 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   color: #B0914F;
 }
 
+.form-room-type-selector{
+  color: #6C757D;
+  
+}
+
 @media (max-width: 400px) {
   .navbar-toggler {
     border: 1px solid #000;
