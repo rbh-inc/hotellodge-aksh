@@ -159,20 +159,20 @@
 
         <div class="row">
           <div class="col-lg-10 ml-4 col-sm-12">
-            <form action="#">
+            <form>
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input name="user_name" type="text" class="form-control" placeholder="Your Name">
+                    <input name="user_name" id="nameField" type="text" class="form-control" placeholder="Your Name">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input name="user_number" type="text" class="form-control" placeholder="Mobile No">
+                    <input name="user_number" id="numberField" type="text" class="form-control" placeholder="Mobile No">
                   </div>
                 </div>
                 <div class="col-lg-12 form-room-type-selector">
-                  <select id="room-type" class="form-control form-group">
+                  <select id="roomType" class="form-control form-group">
                     <option selected>Room Type</option>
                     <option value="1 Person Room">1 Person (No Sharing)</option>
                     <option value="2 Person Room">2 Person Sharing</option>
@@ -182,16 +182,18 @@
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input name="user_email" type="text" class="form-control" placeholder="Email Address">
+                    <input name="user_email" id="mailField" type="text" class="form-control"
+                      placeholder="Email Address">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <textarea name="user_address" class="form-control" rows="3" placeholder="Your Address"></textarea>
+                    <textarea name="user_address" id="addressField" class="form-control" rows="3"
+                      placeholder="Your Address"></textarea>
                   </div>
                 </div>
               </div>
-              <button class="btn btn-main" type="submit">Reserve Room</button>
+              <button class="btn btn-main" type="button" onclick="reserveRoom()">Reserve Room</button>
             </form>
           </div>
 
@@ -321,7 +323,7 @@
               <li class="list-inline-item">
                 <i class="ion-ios-location"></i>
                 Opp to Infosys, mudipu-574153
-                Manglore (D) , Karnataka , India .
+                Manglore (D), Karnataka, India.
               </li>
             </ul>
           </div>
@@ -411,6 +413,32 @@
   <!-- 
     Essential Scripts
     =====================================-->
+
+  <script>
+
+    let nameField = document.getElementById("nameField");
+    let numberField = document.getElementById("numberField");
+    let roomType = document.getElementById("roomType");
+    let mailField = document.getElementById("mailField");
+    let addressField = document.getElementById("addressField");
+
+    function reserveRoom() {
+
+      let name = nameField.value;
+      let number = numberField.value;
+      let room = roomType.value;
+      let mailID = mailField.value;
+      let address = addressField.value;
+
+      // if (name != null && number != null && room != null && mailID != null && address != null) {
+      //   alert("Fill the entire Form.")
+      // }
+
+      let whatsAppMessage = `*Room Reservation*%0AName: ${name}%0ANumber: ${number}%0ARoom Type: ${room}%0AMail ID: ${mailID}%0AAddress: ${address}%0A`
+
+      window.open(`http://wa.me/+919048814964/?text=${whatsAppMessage}`)
+    }
+  </script>
 
 
   <!-- Main jQuery -->
