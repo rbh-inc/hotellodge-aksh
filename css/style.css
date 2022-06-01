@@ -520,6 +520,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   
 }
 
+.card-custom-style{
+  min-width:350px ;
+}
+
 @media (max-width: 400px) {
   .navbar-toggler {
     border: 1px solid #000;
@@ -928,7 +932,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   position: relative;
 }
 
+
 @media (max-width: 480px) {
+
   .ed-booking-tab .nav-tabs li a, .ed-booking-tab .nav-tabs li .page-breadcumb i, .page-breadcumb .ed-booking-tab .nav-tabs li i {
     font-size: 15px;
   }
@@ -2883,3 +2889,21 @@ input[type=checkbox], input[type=radio] {
         box-shadow: 0 0 0 0 rgba(94, 188, 231, 0);
     }
 }
+
+
+/* custom small screen */
+
+/*  If [device width] is less than or equal to 600px */
+@media only screen and (max-width: 600px)  {
+  .about-img-block{
+    height: 350px;
+  }
+}
+
+/*  If [device width] is greater than or equal to 600px */
+@media only screen and (min-width: 950px) {
+  .second-section-living-space{
+    margin-top: 150px;
+  }
+}
+
