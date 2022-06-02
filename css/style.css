@@ -524,6 +524,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   min-width:350px ;
 }
 
+.payment-feedback-container{
+  height: 25vh ;
+}
+
 @media (max-width: 400px) {
   .navbar-toggler {
     border: 1px solid #000;
