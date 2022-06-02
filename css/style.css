@@ -2902,6 +2902,10 @@ input[type=checkbox], input[type=radio] {
   .about-img-block{
     height: 350px;
   }
+  .payment-feedback-container{
+    height: 8vh ;
+  }
+  
 }
 
 /*  If [device width] is greater than or equal to 600px */
